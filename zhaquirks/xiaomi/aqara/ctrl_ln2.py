@@ -51,7 +51,7 @@ from zhaquirks.xiaomi import (
 ATTRIBUTE_PRESENT_VALUE = "present_value"
 
 
-class CtrlLn(XiaomiCustomDevice):
+class CtrlLn2(XiaomiCustomDevice):
     """Aqara double key switch device."""
 
     class BasicClusterDecoupled(BasicCluster):
@@ -74,7 +74,7 @@ class CtrlLn(XiaomiCustomDevice):
         super().__init__(*args, **kwargs)
 
     signature = {
-        MODELS_INFO: [(LUMI, "lumi.ctrl_ln1.aq1"), (LUMI, "lumi.ctrl_ln2.aq1")],
+        MODELS_INFO: [(LUMI, "lumi.ctrl_ln2.aq1")],
         ENDPOINTS: {
             1: {
                 PROFILE_ID: zha.PROFILE_ID,
