@@ -74,7 +74,7 @@ class CtrlLn2(XiaomiCustomDevice):
         super().__init__(*args, **kwargs)
 
     signature = {
-        MODELS_INFO: [(LUMI, "lumi.ctrl_ln2.aq1")],
+        MODELS_INFO: [(LUMI, "lumi.ctrl_ln2.aq1"), (LUMI, "lumi.switch.b2nacn02")],
         ENDPOINTS: {
             1: {
                 PROFILE_ID: zha.PROFILE_ID,
